@@ -1,0 +1,17 @@
+{
+  "name": "reactparty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm install --prefix server && nodemon server/index",
+    "client": "npm install --prefix client && npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.18"
+  }
+}
